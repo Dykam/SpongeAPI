@@ -437,6 +437,10 @@ public interface Server extends Engine {
      * Checks if the current thread matches the main thread of the server.
      *
      * @return True if main thread, false if not
+     * @see #onMainThread()
      */
-    boolean isMainThread();
+    @Deprecated
+    default boolean isMainThread() {
+        return this.onMainThread();
+    }
 }

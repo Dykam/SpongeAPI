@@ -39,4 +39,11 @@ public interface Engine {
      */
     Scheduler getScheduler();
 
+    /**
+     * Checks if the {@link Thread#currentThread() current thread} is the main thread of the engine.
+     *
+     * @return {@code true} if main thread, {@code false} if not
+     */
+    boolean onMainThread();
+
 }

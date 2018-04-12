@@ -66,7 +66,7 @@ public final class Sponge {
     @Inject private static ConfigManager configManager;
     @Inject private static CommandManager commandManager;
     @Inject private static ServiceManager serviceManager;
-    @Inject private static Scheduler scheduler;
+    @Deprecated @Inject private static Scheduler scheduler;
     @Inject private static ChannelRegistrar channelRegistrar;
 
     @Inject private static TeleportHelper teleportHelper;
