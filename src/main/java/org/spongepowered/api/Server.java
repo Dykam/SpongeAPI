@@ -47,7 +47,7 @@ import java.util.concurrent.CompletableFuture;
 /**
  * Represents a typical Minecraft Server.
  */
-public interface Server {
+public interface Server extends Engine {
 
     /**
      * Gets the {@link Player}s currently online.
